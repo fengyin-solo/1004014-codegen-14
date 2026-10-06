@@ -35,3 +35,50 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.success-text { color: #067647; }
+
+/* 视图切换 */
+.view-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.tab { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 6px 16px; cursor: pointer; font-size: 13px; color: var(--muted); }
+.tab.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+/* 漏损分布 */
+.distribution { display: flex; flex-direction: column; gap: 10px; }
+.segment-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.segment-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px; cursor: pointer; flex-wrap: wrap; }
+.segment-main { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.segment-name { font-size: 14px; }
+.drill-arrow { color: var(--muted); font-size: 12px; transition: transform .15s ease; display: inline-block; }
+.drill-arrow.open { transform: rotate(90deg); }
+.method-tag, .round-count { font-size: 12px; color: var(--muted); background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.level-cells { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.level-cell { font-size: 12px; color: var(--muted); border: 1px solid var(--border); border-radius: 6px; padding: 3px 8px; display: inline-flex; gap: 6px; align-items: center; }
+.level-cell b { font-size: 14px; color: #1f2937; }
+.level-cell.dim { opacity: .55; }
+.level-cell.level-轻微 b { color: #067647; }
+.level-cell.level-中等 b { color: #b54708; }
+.level-cell.level-严重 b { color: #b42318; }
+.round-panel { border-top: 1px solid var(--border); padding: 10px 14px 12px; background: #fbfcfe; }
+.round-table { width: 100%; border-collapse: collapse; background: #fff; }
+.round-table th, .round-table td { border: 1px solid var(--border); padding: 6px 8px; font-size: 12px; text-align: left; }
+.round-compare { margin: 8px 0 0; font-size: 12px; color: var(--muted); }
+.empty-block { background: #fff; border: 1px dashed var(--border); border-radius: 8px; padding: 24px; text-align: center; color: var(--muted); font-size: 13px; }
+.hint { font-size: 12px; color: var(--muted); }
+
+/* 徽标 */
+.badge { display: inline-block; border-radius: 999px; padding: 1px 9px; font-size: 12px; line-height: 18px; white-space: nowrap; }
+.badge.pending { background: #fff4e5; color: #b54708; border: 1px solid #fdba74; }
+.badge.resolved { background: #e7f8ef; color: #067647; }
+.badge.linked { background: #eaf1fe; color: #1f6feb; }
+.badge.round-first { background: #f2f4f7; color: #475467; }
+.badge.round-latest { background: #e7f8ef; color: #067647; font-weight: 600; }
+.badge.level-badge.level-轻微 { background: #e7f8ef; color: #067647; }
+.badge.level-badge.level-中等 { background: #fef3e2; color: #b54708; }
+.badge.level-badge.level-严重 { background: #fde8e8; color: #b42318; }
+
+/* 复查事项 */
+.review-block { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; }
+.review-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.review-head h3 { margin: 0; font-size: 14px; }
+.review-count { font-size: 12px; color: var(--muted); }
+.finished-review { margin-top: 10px; opacity: .9; }
